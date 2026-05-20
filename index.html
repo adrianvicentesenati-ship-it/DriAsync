@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>DriAsync — Desarrollo Web Premium</title>
+    <!-- Google Fonts: Syne para títulos, Plus Jakarta Sans para cuerpo (encaja mejor que DM Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+<canvas id="particles-canvas"></canvas>
+
+<nav id="navbar">
+    <div class="logo">
+        <span>Dri</span><span>Async</span>
+    </div>
+    <ul class="nav-links">
+        <li><a href="#hero">Inicio</a></li>
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#tech">Tecnologías</a></li>
+        <li><a href="#cta">Contacto</a></li>
+    </ul>
+    <button class="btn-nav" id="contactBtn">Hablemos</button>
+</nav>
+
+<main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+        <div class="hero-bg-glow"></div>
+        <div class="hero-content">
+            <div class="hero-badge reveal">✦ Desarrollador Web Full Stack ✦</div>
+            <h1 class="hero-title reveal reveal-delay-1">
+                Diseño experiencias<br>web auténticas para<br>marcas que quieren<br><span class="accent">sobresalir.</span>
+            </h1>
+            <p class="hero-sub reveal reveal-delay-2">
+                Desarrollo páginas y plataformas modernas con diseño impactante, animaciones profesionales y una identidad visual única para cualquier tipo de negocio.
+            </p>
+            <div class="hero-btns reveal reveal-delay-3">
+                <a href="#projects" class="btn-primary">Ver proyectos →</a>
+                <a href="#cta" class="btn-outline">Trabajemos juntos ↗</a>
+            </div>
+            <div class="scroll-hint reveal reveal-delay-4">
+                <div class="scroll-wheel"></div>
+                <span>Desliza hacia abajo</span>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <div class="orbit-ring ring1"></div>
+            <div class="orbit-ring ring2"></div>
+            <div class="grid-showcase" id="showcase-grid">
+                <!-- Las tarjetas del grid se generan por JS usando las imágenes reales -->
+                <div class="showcase-card carousel-hero-card"
+                     data-images='["assets/img/ferreteriaphoto.png","assets/img/ferreteriaphoto2.png"]'
+                     data-interval="2000">
+                    <img class="carousel-hero-img" src="assets/img/ferreteriaphoto.png" alt="Ferreterías">
+                    <div class="label">🔧 Ferreterías</div>
+                </div>
+                <div class="showcase-card carousel-hero-card"
+                     data-images='["assets/img/antonycolorphoto.jpg","assets/img/antonycolorphoto2.jpg"]'
+                     data-interval="2200">
+                    <img class="carousel-hero-img" src="assets/img/antonycolorphoto.jpg" alt="Pintura">
+                    <div class="label">🎨 Pintura</div>
+                </div>
+                <div class="showcase-card carousel-hero-card"
+                     data-images='["assets/img/restaurantphoto.png","assets/img/restaurantphoto2.jpg"]'
+                     data-interval="1800">
+                    <img class="carousel-hero-img" src="assets/img/restaurantphoto.png" alt="Comida rápida">
+                    <div class="label">🍔 Comida rápida</div>
+                </div>
+                <div class="showcase-card carousel-hero-card"
+                     data-images='["assets/img/cafeteriaphoto.png","assets/img/cafeteriaphoto2.png"]'
+                     data-interval="2400">
+                    <img class="carousel-hero-img" src="assets/img/cafeteriaphoto.png" alt="Cafeterías">
+                    <div class="label">☕ Cafeterías</div>
+                </div>
+                <div class="showcase-card carousel-hero-card"
+                     data-images='["assets/img/barberiaphoto.png","assets/img/barberiaphoto2.jpeg"]'
+                     data-interval="2100">
+                    <img class="carousel-hero-img" src="assets/img/barberiaphoto.png" alt="Barberías">
+                    <div class="label">✂️ Barberías</div>
+                </div>
+                <div class="showcase-card carousel-hero-card"
+                     data-images='["assets/img/showgreisphoto.jpeg","assets/img/showgreisphoto2.jpeg","assets/img/showgreisphoto3.jpeg","assets/img/showgreisphoto4.jpeg"]'
+                     data-interval="1600">
+                    <img class="carousel-hero-img" src="assets/img/showgreisphoto.jpeg" alt="Eventos">
+                    <div class="label">🎉 Eventos</div>
+                </div>
+                <div class="showcase-card carousel-hero-card"
+                     data-images='["assets/img/quevazphoto.png","assets/img/quevazphoto2.jpg"]'
+                     data-interval="2300">
+                    <img class="carousel-hero-img" src="assets/img/quevazphoto.png" alt="Tecnología">
+                    <div class="label">💻 Tecnología</div>
+                </div>
+                <div class="showcase-card carousel-hero-card"
+                     data-images='["assets/img/paginaquevaz.png"]'
+                     data-interval="2500">
+                    <img class="carousel-hero-img" src="assets/img/paginaquevaz.png" alt="Ecommerce">
+                    <div class="label">🛒 Ecommerce</div>
+                </div>
+                <div class="showcase-card carousel-hero-card"
+                     data-images='["assets/img/quevazphoto.png","assets/img/quevazphoto2.jpg"]'
+                     data-interval="1900">
+                    <img class="carousel-hero-img" src="assets/img/quevazphoto.png" alt="Empresas">
+                    <div class="label">🏢 Empresas</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INDUSTRIES SECTION -->
+    <section id="industries">
+        <p class="industries-label reveal">Trabajo con cualquier industria</p>
+        <div class="industries-grid">
+            <div class="industry-chip reveal"><span class="ic">🔧</span><span>Ferreterías</span></div>
+            <div class="industry-chip reveal reveal-delay-1"><span class="ic">🎨</span><span>Pintura</span></div>
+            <div class="industry-chip reveal reveal-delay-2"><span class="ic">🍽️</span><span>Restaurantes</span></div>
+            <div class="industry-chip reveal reveal-delay-3"><span class="ic">☕</span><span>Cafeterías</span></div>
+            <div class="industry-chip reveal reveal-delay-4"><span class="ic">✂️</span><span>Barberías</span></div>
+            <div class="industry-chip reveal"><span class="ic">🎉</span><span>Eventos</span></div>
+            <div class="industry-chip reveal reveal-delay-1"><span class="ic">💻</span><span>Tecnología</span></div>
+            <div class="industry-chip reveal reveal-delay-2"><span class="ic">🛒</span><span>Ecommerce</span></div>
+            <div class="industry-chip reveal reveal-delay-3"><span class="ic">🏢</span><span>Empresas</span></div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about-full-bg" style="background-image: url('assets/img/Fondo_Programador.jpg');">
+        <div class="about-overlay"></div>
+        <div class="about-container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <div class="section-tag reveal">Sobre mí</div>
+                    <h2 class="section-title reveal reveal-delay-1">Creatividad, código<br>y <span class="accent">estrategia.</span></h2>
+                    <p class="section-body reveal reveal-delay-2">
+                        Desarrollador web apasionado por crear soluciones digitales modernas, rápidas y visualmente impactantes. Combino diseño, tecnología y estrategia para ayudarte a destacar en un mundo digital competitivo.
+                    </p>
+                    <div class="feature-list reveal reveal-delay-3">
+                        <div class="feature-item"><div class="fi-icon">✦</div> Diseño Impactante</div>
+                        <div class="feature-item"><div class="fi-icon">⚡</div> Código Optimizado</div>
+                        <div class="feature-item"><div class="fi-icon">📊</div> Resultados Medibles</div>
+                    </div>
+                    <a href="#cta" class="btn-outline reveal reveal-delay-4" style="display:inline-flex;">Conoce más sobre mí ↗</a>
+                </div>
+
+                <!-- TARJETA DE PERFIL MEJORADA -->
+                <div class="about-profile-card-wrapper">
+                    <div id="profile-card-wrapper" class="pc-card-wrapper">
+                        <div class="pc-behind"></div>
+                        <div class="pc-card-shell">
+                            <div class="pc-card">
+                                <div class="pc-inside">
+                                    <div class="pc-shine"></div>
+                                    <div class="pc-glare"></div>
+                                    <div class="pc-code-pattern"></div>
+
+                                    <!-- Nombre y rol en la parte superior -->
+                                    <div class="pc-content pc-top-details">
+                                        <div class="pc-details">
+                                            <h3>DriAsync</h3>
+                                            <p class="pc-role">Full Stack Developer</p>
+                                            <div class="pc-badges">
+                                                <span class="pc-badge">HTML/CSS</span>
+                                                <span class="pc-badge">JavaScript</span>
+                                                <span class="pc-badge">PHP</span>
+                                                <span class="pc-badge">React</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Avatar centrado -->
+                                    <div class="pc-content pc-avatar-content">
+                                        <img class="avatar" src="assets/img/TarjetaPerfil.png" alt="Mi avatar" loading="lazy">
+                                        <!-- Info bar en la parte inferior -->
+                                        <div class="pc-user-info">
+                                            <div class="pc-user-details">
+                                                <div class="pc-mini-avatar">
+                                                    <img src="assets/img/TarjetaPerfil.png" alt="mini avatar">
+                                                </div>
+                                                <div class="pc-user-text">
+                                                    <div class="pc-handle">@driasync</div>
+                                                    <div class="pc-status">
+                                                        <span class="pc-status-dot"></span>
+                                                        Disponible
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="pc-contact-btn" id="profileContactBtn">Contactar</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+        <div class="section-tag reveal">Proyectos Destacados</div>
+        <div id="crosshair-title-container" style="position: relative; display: inline-block; width: auto; margin: 0 auto; text-align: center;">
+            <h2 class="section-title reveal reveal-delay-1" id="animated-title">Trabajo que <span class="accent">habla por sí solo.</span></h2>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card reveal">
+                <div class="project-thumb"><img src="assets/img/quevazphoto.png" alt="TecnoSoluciones" class="project-img"></div>
+                <div class="project-body">
+                    <div class="project-type" style="color:var(--blue-light)">Plataforma Empresarial</div>
+                    <div class="project-name">TecnoSoluciones</div>
+                    <div class="project-desc">Sistema completo de gestión de clientes, proyectos y actividades con roles y reportes.</div>
+                    <div class="tech-tags">
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-footer">
+                        <span style="font-size:.8rem;color:var(--muted)">Ver proyecto</span>
+                        <button class="btn-icon" data-project="TecnoSoluciones">↗</button>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card reveal reveal-delay-1">
+                <div class="project-thumb"><img src="assets/img/paginaquevaz.png" alt="Quevaz" class="project-img"></div>
+                <div class="project-body">
+                    <div class="project-type" style="color:var(--purple-light)">Sitio Web Corporativo</div>
+                    <div class="project-name">Quevaz</div>
+                    <div class="project-desc">Sitio web moderno y profesional para marca de servicios con diseño premium.</div>
+                    <div class="tech-tags">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-footer">
+                        <span style="font-size:.8rem;color:var(--muted)">Ver proyecto</span>
+                        <button class="btn-icon" data-project="Quevaz">↗</button>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card reveal reveal-delay-2">
+                <div class="project-thumb"><img src="assets/img/cafeteriaphoto.png" alt="Ecommerce Pro" class="project-img"></div>
+                <div class="project-body">
+                    <div class="project-type" style="color:var(--blue-light)">Tienda Online</div>
+                    <div class="project-name">Ecommerce Pro</div>
+                    <div class="project-desc">Tienda online completa con carrito, pagos y panel administrativo moderno.</div>
+                    <div class="tech-tags">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
+                    <div class="project-footer">
+                        <span style="font-size:.8rem;color:var(--muted)">Ver proyecto</span>
+                        <button class="btn-icon" data-project="Ecommerce Pro">↗</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TECH SECTION -->
+    <section id="tech">
+        <div class="section-tag reveal" style="justify-content:center">Tecnologías que uso</div>
+        <h2 class="section-title reveal reveal-delay-1" style="text-align:center">Stack <span class="accent">moderno y potente.</span></h2>
+        <div class="tech-grid">
+            <div class="tech-card reveal"><div class="tech-icon">🐘</div><div class="tech-name">PHP</div></div>
+            <div class="tech-card reveal reveal-delay-1"><div class="tech-icon">🐬</div><div class="tech-name">MySQL</div></div>
+            <div class="tech-card reveal reveal-delay-2"><div class="tech-icon"><span style="font-size:1.8rem;color:#F7DF1E;font-weight:900;font-family:monospace">JS</span></div><div class="tech-name">JavaScript</div></div>
+            <div class="tech-card reveal reveal-delay-3"><div class="tech-icon"><span style="font-size:1.8rem;color:#61DAFB;">⚛</span></div><div class="tech-name">React</div></div>
+            <div class="tech-card reveal reveal-delay-4"><div class="tech-icon"><span style="font-size:1.8rem;color:#E34F26;font-weight:900;font-family:monospace">5</span></div><div class="tech-name">HTML</div></div>
+            <div class="tech-card reveal"><div class="tech-icon"><span style="font-size:1.8rem;color:#1572B6;font-weight:900;font-family:monospace">3</span></div><div class="tech-name">CSS</div></div>
+            <div class="tech-card reveal reveal-delay-1"><div class="tech-icon"><span style="font-size:1.5rem;color:#68A063;font-weight:800;font-family:monospace">Node</span></div><div class="tech-name">Node.js</div></div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section id="cta">
+        <div class="cta-glow"></div>
+        <h2 class="cta-title reveal">Tu negocio merece <span class="accent">destacar.</span></h2>
+        <p class="cta-sub reveal reveal-delay-1">Hagamos que tu marca sea única en el mundo digital.</p>
+        <a href="mailto:contacto@driasync.com" class="btn-primary reveal reveal-delay-2" style="display:inline-flex;font-size:1rem;padding:16px 36px;">
+            Trabajemos juntos ↗
+        </a>
+    </section>
+</main>
+
+<footer>
+    <div class="logo"><span>Dri</span><span>Async</span></div>
+    <p class="footer-copy">&copy; 2025 DriAsync. Todos los derechos reservados.</p>
+    <div class="footer-links">
+        <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/hero-carousel.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script type="module" src="assets/js/crosshair-title.js"></script>
+<script src="assets/js/profile-card-tilt.js"></script>
+<script>
+    // Botón contactar → WhatsApp número 925476289
+    document.getElementById('profileContactBtn')?.addEventListener('click', () => {
+        window.open('https://wa.me/51925476289?text=Hola%2C%20vi%20tu%20portafolio%20y%20me%20interesa%20trabajar%20contigo.', '_blank');
+    });
+</script>
+
+</body>
+</html>
