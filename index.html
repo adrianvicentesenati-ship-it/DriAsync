@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>DriAsync — Desarrollo Web Premium</title>
-    <!-- Google Fonts: Syne para títulos, Plus Jakarta Sans para cuerpo (encaja mejor que DM Sans) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/services.css">
 </head>
 <body>
 
@@ -23,6 +23,7 @@
     <ul class="nav-links">
         <li><a href="#hero">Inicio</a></li>
         <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#services">Servicios</a></li>
         <li><a href="#projects">Proyectos</a></li>
         <li><a href="#tech">Tecnologías</a></li>
         <li><a href="#cta">Contacto</a></li>
@@ -43,7 +44,7 @@
                 Desarrollo páginas y plataformas modernas con diseño impactante, animaciones profesionales y una identidad visual única para cualquier tipo de negocio.
             </p>
             <div class="hero-btns reveal reveal-delay-3">
-                <a href="#projects" class="btn-primary">Ver proyectos →</a>
+                <a href="#services" class="btn-primary">Ver servicios →</a>
                 <a href="#cta" class="btn-outline">Trabajemos juntos ↗</a>
             </div>
             <div class="scroll-hint reveal reveal-delay-4">
@@ -56,7 +57,6 @@
             <div class="orbit-ring ring1"></div>
             <div class="orbit-ring ring2"></div>
             <div class="grid-showcase" id="showcase-grid">
-                <!-- Las tarjetas del grid se generan por JS usando las imágenes reales -->
                 <div class="showcase-card carousel-hero-card"
                      data-images='["assets/img/ferreteriaphoto.png","assets/img/ferreteriaphoto2.png"]'
                      data-interval="2000">
@@ -138,19 +138,25 @@
             <div class="about-grid">
                 <div class="about-text">
                     <div class="section-tag reveal">Sobre mí</div>
-                    <h2 class="section-title reveal reveal-delay-1">Creatividad, código<br>y <span class="accent">estrategia.</span></h2>
+                    <h2 class="section-title reveal reveal-delay-1">Adriano Peña,<br>código y <span class="accent">estrategia.</span></h2>
                     <p class="section-body reveal reveal-delay-2">
-                        Desarrollador web apasionado por crear soluciones digitales modernas, rápidas y visualmente impactantes. Combino diseño, tecnología y estrategia para ayudarte a destacar en un mundo digital competitivo.
+                        Desarrollador Web y estudiante de Ingeniería de Software e IoT, 19 años. Combino diseño, tecnología y estrategia para crear soluciones digitales que generan resultados reales para cualquier negocio.
                     </p>
                     <div class="feature-list reveal reveal-delay-3">
-                        <div class="feature-item"><div class="fi-icon">✦</div> Diseño Impactante</div>
-                        <div class="feature-item"><div class="fi-icon">⚡</div> Código Optimizado</div>
-                        <div class="feature-item"><div class="fi-icon">📊</div> Resultados Medibles</div>
+                        <div class="feature-item"><div class="fi-icon">✦</div> Diseño Impactante y Personalizado</div>
+                        <div class="feature-item"><div class="fi-icon">⚡</div> Código Optimizado y Profesional</div>
+                        <div class="feature-item"><div class="fi-icon">📊</div> Soluciones con Resultados Medibles</div>
+                        <div class="feature-item"><div class="fi-icon">🤝</div> Asesoría gratuita y despliegue incluido</div>
                     </div>
-                    <a href="#cta" class="btn-outline reveal reveal-delay-4" style="display:inline-flex;">Conoce más sobre mí ↗</a>
+                    <div class="about-contact-info reveal reveal-delay-4">
+                        <div class="contact-chip"><span>📱</span> 925 476 289</div>
+                        <div class="contact-chip"><span>📧</span> adrianvicente.senati@gmail.com</div>
+                        <div class="contact-chip"><span>📍</span> Piura, Perú</div>
+                    </div>
+                    <a href="#cta" class="btn-outline reveal" style="display:inline-flex;margin-top:28px;">Trabajemos juntos ↗</a>
                 </div>
 
-                <!-- TARJETA DE PERFIL MEJORADA -->
+                <!-- TARJETA DE PERFIL -->
                 <div class="about-profile-card-wrapper">
                     <div id="profile-card-wrapper" class="pc-card-wrapper">
                         <div class="pc-behind"></div>
@@ -161,7 +167,6 @@
                                     <div class="pc-glare"></div>
                                     <div class="pc-code-pattern"></div>
 
-                                    <!-- Nombre y rol en la parte superior -->
                                     <div class="pc-content pc-top-details">
                                         <div class="pc-details">
                                             <h3>DriAsync</h3>
@@ -175,10 +180,8 @@
                                         </div>
                                     </div>
 
-                                    <!-- Avatar centrado -->
                                     <div class="pc-content pc-avatar-content">
                                         <img class="avatar" src="assets/img/TarjetaPerfil.png" alt="Mi avatar" loading="lazy">
-                                        <!-- Info bar en la parte inferior -->
                                         <div class="pc-user-info">
                                             <div class="pc-user-details">
                                                 <div class="pc-mini-avatar">
@@ -205,64 +208,220 @@
         </div>
     </section>
 
+    <!-- ===== SERVICES SECTION ===== -->
+    <section id="services">
+        <div class="section-tag reveal" style="justify-content:center">Catálogo de Servicios</div>
+        <h2 class="section-title reveal reveal-delay-1" style="text-align:center">Soluciones web<br><span class="accent">a medida para tu negocio.</span></h2>
+        <p class="services-intro reveal reveal-delay-2">Tres propuestas de desarrollo según tus necesidades, presupuesto y nivel de presencia digital que quieres alcanzar.</p>
+
+        <!-- PLANES PRINCIPALES -->
+        <div class="plans-grid">
+
+            <!-- Plan 1 -->
+            <div class="plan-card reveal">
+                <div class="plan-header">
+                    <div class="plan-icon">🚀</div>
+                    <div class="plan-label">Emprendedor</div>
+                    <div class="plan-name">Landing Page Básica</div>
+                    <div class="plan-price">S/. 200</div>
+                </div>
+                <ul class="plan-features">
+                    <li><span class="pf-check">✦</span> Estructura de una sola página (One-Page)</li>
+                    <li><span class="pf-check">✦</span> Información esencial del negocio resumida</li>
+                    <li><span class="pf-check">✦</span> Diseño plano con colores y tipografías estándar</li>
+                    <li><span class="pf-check">✦</span> Sin animaciones avanzadas ni elementos complejos</li>
+                    <li><span class="pf-check">✦</span> Ideal para validar presencia en internet rápido</li>
+                </ul>
+                <a href="https://wa.me/51925476289?text=Hola%2C%20me%20interesa%20la%20Landing%20Page%20B%C3%A1sica%20(S%2F200)" target="_blank" class="plan-btn">Consultar ahora ↗</a>
+            </div>
+
+            <!-- Plan 2 — DESTACADO -->
+            <div class="plan-card plan-featured reveal reveal-delay-1">
+                <div class="plan-badge-popular">Más Popular</div>
+                <div class="plan-header">
+                    <div class="plan-icon">⚡</div>
+                    <div class="plan-label">Negocio Local</div>
+                    <div class="plan-name">Landing Page</div>
+                    <div class="plan-price">S/. 400</div>
+                </div>
+                <ul class="plan-features">
+                    <li><span class="pf-check">✦</span> Navegación ampliada hacia pequeños apartados</li>
+                    <li><span class="pf-check">✦</span> Diseño exclusivo y personalizado desde cero</li>
+                    <li><span class="pf-check">✦</span> Secciones de servicios, fotos reales y precios</li>
+                    <li><span class="pf-check">✦</span> Elementos interactivos: videos, carruseles dinámicos</li>
+                    <li><span class="pf-check">✦</span> Botones de acción directa vinculados a WhatsApp</li>
+                </ul>
+                <a href="https://wa.me/51925476289?text=Hola%2C%20me%20interesa%20la%20Landing%20Page%20(S%2F400)" target="_blank" class="plan-btn plan-btn-featured">Consultar ahora ↗</a>
+            </div>
+
+            <!-- Plan 3 -->
+            <div class="plan-card reveal reveal-delay-2">
+                <div class="plan-header">
+                    <div class="plan-icon">🏢</div>
+                    <div class="plan-label">Empresa Seria</div>
+                    <div class="plan-name">Web Corporativa</div>
+                    <div class="plan-price">S/. 600</div>
+                </div>
+                <ul class="plan-features">
+                    <li><span class="pf-check">✦</span> Múltiples apartados independientes (Inicio, Nosotros, Servicios, Galería, Contacto…)</li>
+                    <li><span class="pf-check">✦</span> Estilos de diseño diferenciados por sección</li>
+                    <li><span class="pf-check">✦</span> Animaciones fluidas, transiciones y menús dinámicos</li>
+                    <li><span class="pf-check">✦</span> Diseño móvil altamente adaptable y optimizado</li>
+                    <li><span class="pf-check">✦</span> Herramientas de atención al cliente integradas</li>
+                </ul>
+                <a href="https://wa.me/51925476289?text=Hola%2C%20me%20interesa%20la%20Web%20Corporativa%20(S%2F600)" target="_blank" class="plan-btn">Consultar ahora ↗</a>
+            </div>
+
+        </div>
+
+        <!-- MÓDULOS ADICIONALES -->
+        <div class="addons-wrapper reveal">
+            <div class="addons-label">
+                <span class="section-tag" style="margin-bottom:0;display:inline-flex;">Módulos Adicionales</span>
+                <p>Potencia tu página con funcionalidades extra</p>
+            </div>
+            <div class="addons-grid">
+                <div class="addon-card">
+                    <div class="addon-icon">🎯</div>
+                    <div class="addon-info">
+                        <div class="addon-name">Campaña Estacional</div>
+                        <div class="addon-desc">Módulo temporal con efecto de apertura interactivo, contador regresivo, ofertas flash y catálogo con precios tachados. Ideal para fechas especiales.</div>
+                    </div>
+                    <div class="addon-price">S/. 100</div>
+                </div>
+                <div class="addon-card">
+                    <div class="addon-icon">🗄️</div>
+                    <div class="addon-info">
+                        <div class="addon-name">Sistema ERP / Almacén</div>
+                        <div class="addon-desc">Aplicación web avanzada full-stack con control de inventario, módulos de entradas/salidas, RBAC de usuarios, dashboard analítico y bitácora Kárdex.</div>
+                    </div>
+                    <div class="addon-price">S/. 1200</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- HOSTING INFO -->
+        <div class="hosting-wrapper reveal">
+            <div class="hosting-header">
+                <div class="hosting-icon">🌐</div>
+                <div>
+                    <div class="hosting-title">Inversión Anual en Plataforma</div>
+                    <div class="hosting-subtitle">Dominio + Hosting para que tu web esté activa 24/7 — pagado directamente a Hostinger. Asesoría y despliegue gratis.</div>
+                </div>
+            </div>
+            <div class="hosting-plans">
+                <div class="hosting-plan">
+                    <div class="hp-name">Plan Premium</div>
+                    <div class="hp-desc">Emprendedores y negocios locales. Correos corporativos incluidos.</div>
+                    <div class="hp-price">~$2.99<span>/mes</span></div>
+                    <div class="hp-tag">Ideal: Landing Page</div>
+                </div>
+                <div class="hosting-plan hosting-plan-mid">
+                    <div class="hp-name">Plan Business</div>
+                    <div class="hp-desc">Empresas en crecimiento con catálogos pesados. Backups diarios automáticos.</div>
+                    <div class="hp-price">~$4.39<span>/mes</span></div>
+                    <div class="hp-tag">Ideal: Web Corporativa</div>
+                </div>
+                <div class="hosting-plan">
+                    <div class="hp-name">Plan Cloud Startup</div>
+                    <div class="hp-desc">Sistemas avanzados con base de datos y muchos accesos simultáneos.</div>
+                    <div class="hp-price">~$9.19<span>/mes</span></div>
+                    <div class="hp-tag">Ideal: Sistema ERP</div>
+                </div>
+            </div>
+            <p class="hosting-note">✅ Todos los planes incluyen <strong>dominio gratis el primer año</strong>, certificado SSL y soporte 24h en español. Yo te asesoro gratis en la compra y subo tu web sin costo adicional.</p>
+        </div>
+    </section>
+
     <!-- PROJECTS SECTION -->
     <section id="projects">
-        <div class="section-tag reveal">Proyectos Destacados</div>
+        <div class="section-tag reveal">Proyectos Realizados</div>
         <div id="crosshair-title-container" style="position: relative; display: inline-block; width: auto; margin: 0 auto; text-align: center;">
             <h2 class="section-title reveal reveal-delay-1" id="animated-title">Trabajo que <span class="accent">habla por sí solo.</span></h2>
         </div>
         <div class="projects-grid">
+
+            <!-- Proyecto 1: Quevaz.pe -->
             <div class="project-card reveal">
-                <div class="project-thumb"><img src="assets/img/quevazphoto.png" alt="TecnoSoluciones" class="project-img"></div>
+                <div class="project-thumb"><img src="assets/img/paginaquevaz.png" alt="Quevaz.pe" class="project-img"></div>
                 <div class="project-body">
-                    <div class="project-type" style="color:var(--blue-light)">Plataforma Empresarial</div>
-                    <div class="project-name">TecnoSoluciones</div>
-                    <div class="project-desc">Sistema completo de gestión de clientes, proyectos y actividades con roles y reportes.</div>
-                    <div class="tech-tags">
-                        <span class="tech-tag">PHP</span>
-                        <span class="tech-tag">MySQL</span>
-                        <span class="tech-tag">JavaScript</span>
-                    </div>
-                    <div class="project-footer">
-                        <span style="font-size:.8rem;color:var(--muted)">Ver proyecto</span>
-                        <button class="btn-icon" data-project="TecnoSoluciones">↗</button>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card reveal reveal-delay-1">
-                <div class="project-thumb"><img src="assets/img/paginaquevaz.png" alt="Quevaz" class="project-img"></div>
-                <div class="project-body">
-                    <div class="project-type" style="color:var(--purple-light)">Sitio Web Corporativo</div>
-                    <div class="project-name">Quevaz</div>
-                    <div class="project-desc">Sitio web moderno y profesional para marca de servicios con diseño premium.</div>
+                    <div class="project-type" style="color:var(--purple-light)">Landing Page + Web Corporativa</div>
+                    <div class="project-name">Quevaz.pe</div>
+                    <div class="project-desc">Sitio web corporativo con servicios expandibles, carrusel de productos más vendidos, botones CTA a WhatsApp, Google Maps integrado y módulo de campaña del Día del Padre.</div>
                     <div class="tech-tags">
                         <span class="tech-tag">HTML</span>
                         <span class="tech-tag">CSS</span>
                         <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">S/. 700</span>
                     </div>
                     <div class="project-footer">
-                        <span style="font-size:.8rem;color:var(--muted)">Ver proyecto</span>
-                        <button class="btn-icon" data-project="Quevaz">↗</button>
+                        <span style="font-size:.8rem;color:var(--muted)">Ver proyecto en vivo</span>
+                        <a href="https://quevaz.pe" target="_blank" rel="noopener noreferrer" class="btn-icon" title="Ir a quevaz.pe">↗</a>
                     </div>
                 </div>
             </div>
-            <div class="project-card reveal reveal-delay-2">
-                <div class="project-thumb"><img src="assets/img/cafeteriaphoto.png" alt="Ecommerce Pro" class="project-img"></div>
+
+            <!-- Proyecto 2: Sistema Almacén Quevaz -->
+            <div class="project-card reveal reveal-delay-1">
+                <div class="project-thumb"><img src="assets/img/quevazphoto.png" alt="Sistema ERP Quevaz" class="project-img"></div>
                 <div class="project-body">
-                    <div class="project-type" style="color:var(--blue-light)">Tienda Online</div>
-                    <div class="project-name">Ecommerce Pro</div>
-                    <div class="project-desc">Tienda online completa con carrito, pagos y panel administrativo moderno.</div>
+                    <div class="project-type" style="color:var(--blue-light)">Aplicación Web / Sistema ERP</div>
+                    <div class="project-name">Sistema de Almacén</div>
+                    <div class="project-desc">Intranet full-stack para Quevaz con control RBAC (Admin, Operario, Visualizador), dashboard analítico, módulos de inventario, movimientos (entradas/retiros/devoluciones) y bitácora Kárdex.</div>
                     <div class="tech-tags">
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">Node.js</span>
-                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">AJAX</span>
+                        <span class="tech-tag">S/. 1200</span>
                     </div>
                     <div class="project-footer">
-                        <span style="font-size:.8rem;color:var(--muted)">Ver proyecto</span>
-                        <button class="btn-icon" data-project="Ecommerce Pro">↗</button>
+                        <span style="font-size:.8rem;color:var(--muted)">Proyecto privado</span>
+                        <button class="btn-icon" title="Sistema privado — no disponible al público">🔒</button>
                     </div>
                 </div>
             </div>
+
+            <!-- Proyecto 3: Show de Greis -->
+            <div class="project-card reveal reveal-delay-2">
+                <div class="project-thumb"><img src="assets/img/showgreisphoto.jpeg" alt="Show de Greis" class="project-img"></div>
+                <div class="project-body">
+                    <div class="project-type" style="color:var(--purple-light)">Landing Page — En Proceso</div>
+                    <div class="project-name">Show de Greis</div>
+                    <div class="project-desc">Landing Page para negocio de shows infantiles y eventos temáticos. Video de fondo en hero, sección de paquetes todo incluido (Básico, Premium, Deluxe), galería de personajes y CTAs directos a WhatsApp.</div>
+                    <div class="tech-tags">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">S/. 300</span>
+                    </div>
+                    <div class="project-footer">
+                        <span style="font-size:.8rem;color:var(--muted)">En desarrollo</span>
+                        <button class="btn-icon" style="font-size:.7rem;letter-spacing:.5px;width:auto;padding:0 10px;border-radius:20px;" title="Próximamente">🚧</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyecto 4: AdrianoZ -->
+            <div class="project-card reveal">
+                <div class="project-thumb"><img src="assets/img/cafeteriaphoto.png" alt="AdrianoZ" class="project-img"></div>
+                <div class="project-body">
+                    <div class="project-type" style="color:var(--blue-light)">Landing Page Multi-Página — En Proceso</div>
+                    <div class="project-name">AdrianoZ</div>
+                    <div class="project-desc">Web multi-página para catálogo de fábulas con header de video impactante, bloques promocionales de lanzamiento, catálogo indexado por categorías de valores y sección biográfica del autor.</div>
+                    <div class="tech-tags">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">S/. 400</span>
+                    </div>
+                    <div class="project-footer">
+                        <span style="font-size:.8rem;color:var(--muted)">En desarrollo</span>
+                        <button class="btn-icon" style="font-size:.7rem;letter-spacing:.5px;width:auto;padding:0 10px;border-radius:20px;" title="Próximamente">🚧</button>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -285,20 +444,30 @@
     <section id="cta">
         <div class="cta-glow"></div>
         <h2 class="cta-title reveal">Tu negocio merece <span class="accent">destacar.</span></h2>
-        <p class="cta-sub reveal reveal-delay-1">Hagamos que tu marca sea única en el mundo digital.</p>
-        <a href="mailto:contacto@driasync.com" class="btn-primary reveal reveal-delay-2" style="display:inline-flex;font-size:1rem;padding:16px 36px;">
-            Trabajemos juntos ↗
-        </a>
+        <p class="cta-sub reveal reveal-delay-1">Hagamos que tu marca sea única en el mundo digital. Escríbeme y conversamos.</p>
+        <div class="cta-btns reveal reveal-delay-2">
+            <a href="https://wa.me/51925476289?text=Hola%2C%20vi%20tu%20portafolio%20y%20me%20interesa%20trabajar%20contigo." target="_blank" class="btn-primary" style="display:inline-flex;font-size:1rem;padding:16px 36px;">
+                WhatsApp ↗
+            </a>
+            <a href="mailto:adrianvicente.senati@gmail.com" class="btn-outline" style="display:inline-flex;font-size:1rem;padding:16px 36px;">
+                Correo electrónico
+            </a>
+        </div>
+        <div class="cta-contact-detail reveal">
+            <span>📱 925 476 289</span>
+            <span>•</span>
+            <span>📧 adrianvicente.senati@gmail.com</span>
+        </div>
     </section>
 </main>
 
 <footer>
     <div class="logo"><span>Dri</span><span>Async</span></div>
-    <p class="footer-copy">&copy; 2025 DriAsync. Todos los derechos reservados.</p>
+    <p class="footer-copy">&copy; 2025 DriAsync — Adriano Peña Vicente. Todos los derechos reservados.</p>
     <div class="footer-links">
-        <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
-        <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://github.com/adrianvicentesenati-ship-it" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://wa.me/51925476289" target="_blank" rel="noopener noreferrer">WhatsApp</a>
     </div>
 </footer>
 
@@ -308,8 +477,10 @@
 <script type="module" src="assets/js/crosshair-title.js"></script>
 <script src="assets/js/profile-card-tilt.js"></script>
 <script>
-    // Botón contactar → WhatsApp número 925476289
     document.getElementById('profileContactBtn')?.addEventListener('click', () => {
+        window.open('https://wa.me/51925476289?text=Hola%2C%20vi%20tu%20portafolio%20y%20me%20interesa%20trabajar%20contigo.', '_blank');
+    });
+    document.getElementById('contactBtn')?.addEventListener('click', () => {
         window.open('https://wa.me/51925476289?text=Hola%2C%20vi%20tu%20portafolio%20y%20me%20interesa%20trabajar%20contigo.', '_blank');
     });
 </script>
